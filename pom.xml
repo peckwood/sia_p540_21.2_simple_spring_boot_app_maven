@@ -4,15 +4,16 @@
 
 	<groupId>com.raidencentral</groupId>
 	<artifactId>sia_p540_21.2_simple_spring_boot_app_maven</artifactId>
-	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>sia_p540_21.2_simple_spring_boot_app_maven Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
+	<!-- version 1.1.4.RELEASE shows invalid packaging for parent POM -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-test</artifactId>
-		<version>1.1.4.RELEASE</version>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.6.RELEASE</version>
 	</parent>
 
 	<dependencies>
@@ -21,10 +22,19 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf-spring4</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+		
 	</dependencies>
 	<build>
 		<finalName>sia_p540_21.2_simple_spring_boot_app_maven</finalName>
