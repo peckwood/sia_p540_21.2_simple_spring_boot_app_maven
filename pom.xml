@@ -34,7 +34,11 @@
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 		</dependency>
-		
+		<dependency>
+			<groupId> org.springframework.boot</groupId>
+			<artifactId>spring-boot-actuator</artifactId>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<finalName>sia_p540_21.2_simple_spring_boot_app_maven</finalName>
